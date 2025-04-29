@@ -32,3 +32,111 @@ a {
   color: #333;
   padding: 10px 20px;
 }
+
+.container {
+  display: flex-box;
+  height: 100vh;
+  background: #60efff;
+  background: linear-gradient(
+    180deg,
+    rgba(96, 239, 255, 1) 35%,
+    rgba(33, 12, 174, 1) 100%
+  );
+  padding: 20px;
+}
+
+.landing-page {
+  padding: 10rem;
+  width: 300px;
+  height: 300px;
+}
+.landing-page img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: 30rem;
+}
+.landing-page button {
+  margin-top: 30px;
+  width: 350px;
+  height: 55px;
+  font: inherit;
+  background-color: #f0f0f0;
+  border: 0;
+  color: #242424;
+  border-radius: 0.5em;
+  font-size: 1.35rem;
+  padding: 0.375em 1em;
+  font-weight: 600;
+  text-shadow: 0 0.0625em 0 #fff;
+  box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
+    0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
+    0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+.landing-page button a {
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+button:active {
+  translate: 0 0.225em;
+  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+}
+
+#segunda {
+  background: white;
+  background-size: cover;
+  height: 50vh;
+  text-align: right;
+  margin-top: -420px;
+  margin-right: 170px;
+  margin-left: 1100px;
+}
+.img {
+  width: 670px;
+  margin-top: 250px;
+  margin-left: 130px;
+  border-radius: 30px;
+  box-shadow: 17px 24px 6.3px 0px #00000080;
+}
+
+/*Formatação terceira pagina (fernanda)*/
+#terceira {
+  background: linear-gradient(180deg, #60EFFF 0%, #210CAE 100%);
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+#quadrado {
+display: flex;
+justify-content: space-around; /* Distribui os quadrados uniformemente */
+align-items: center; /* Centraliza verticalmente */
+min-height: 90vh; /* Garante que a página ocupe toda a altura da viewport */
+margin: 0;
+margin-left: 70px;
+margin-right: 70px;
+}
+.square {
+background-color: white;
+padding: 20px;
+border-radius: 30px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+text-align: center;
+width: 250px; /* Largura dos quadrados */
+box-shadow: 28px 42px 14.5px 0px #00000085; /*sombra do quadrado*/
+border: 1px solid #00000042
+}
+.title {
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+}
