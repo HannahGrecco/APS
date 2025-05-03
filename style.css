@@ -1,3 +1,6 @@
+* {
+  cursor: url("assets/icons8-top-view-fish-50.png") 10 10, auto !important;
+}
 html {
   scroll-behavior: smooth;
 }
