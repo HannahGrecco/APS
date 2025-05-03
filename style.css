@@ -1,3 +1,9 @@
+* {
+  cursor: url("assets/icons8-top-view-fish-50.png") 10 10, auto !important;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -32,6 +38,9 @@ a {
   color: #333;
   padding: 10px 20px;
 }
+.navbar a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 .container {
   display: flex-box;
@@ -42,7 +51,6 @@ a {
     rgba(96, 239, 255, 1) 35%,
     rgba(33, 12, 174, 1) 100%
   );
-  padding: 20px;
 }
 
 .landing-page {
@@ -57,7 +65,21 @@ a {
   height: auto;
   width: 30rem;
 }
+.landing-page h1 {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 2s ease forwards;
+}
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .landing-page button {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 2s ease forwards;
   margin-top: 30px;
   width: 350px;
   height: 55px;
@@ -88,15 +110,16 @@ button:active {
     0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
     0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
 }
-
+/*FERNANDA*/
 #segunda {
   background: white;
   background-size: cover;
-  height: 50vh;
+  margin-bottom: 150px;
   text-align: right;
-  margin-top: -420px;
+  margin-top: -450px;
   margin-right: 170px;
   margin-left: 1100px;
+  scroll-margin-top: 200px;
 }
 .img {
   width: 670px;
@@ -108,33 +131,33 @@ button:active {
 
 /*Formatação terceira pagina (fernanda)*/
 #terceira {
-  background: linear-gradient(180deg, #60EFFF 0%, #210CAE 100%);
+  background: linear-gradient(180deg, #60efff 0%, #210cae 100%);
   background-size: cover;
   height: 100vh;
   margin: 0;
 }
 #quadrado {
-display: flex;
-justify-content: space-around; /* Distribui os quadrados uniformemente */
-align-items: center; /* Centraliza verticalmente */
-min-height: 90vh; /* Garante que a página ocupe toda a altura da viewport */
-margin: 0;
-margin-left: 70px;
-margin-right: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 90vh;
+  margin: 0;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 .square {
-background-color: white;
-padding: 20px;
-border-radius: 30px;
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
-text-align: center;
-width: 250px; /* Largura dos quadrados */
-box-shadow: 28px 42px 14.5px 0px #00000085; /*sombra do quadrado*/
-border: 1px solid #00000042
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 250px;
+  box-shadow: 28px 42px 14.5px 0px #00000085;
+  border: 1px solid #00000042;
 }
 .title {
-font-weight: bold;
-margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 h2 {
