@@ -118,7 +118,7 @@ button:active {
   max-width: 900px;
   padding: 20px;
   text-align: center;
-  scroll-margin-top: 600px;
+  scroll-margin-top: 500px;
   opacity: 0;
   transform: translateX(-50px);
   animation: fadeInLeft 2s ease forwards;
