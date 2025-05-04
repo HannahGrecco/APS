@@ -114,21 +114,28 @@ button:active {
 #segunda {
   background: white;
   background-size: cover;
-  margin-bottom: 150px;
-  text-align: right;
-  margin-top: -450px;
-  margin-right: 170px;
-  margin-left: 1100px;
-  scroll-margin-top: 200px;
-}
-.img {
-  width: 670px;
-  margin-top: 250px;
-  margin-left: 130px;
-  border-radius: 30px;
-  box-shadow: 17px 24px 6.3px 0px #00000080;
+  margin: 100px auto;
+  max-width: 900px;
+  padding: 20px;
+  text-align: center;
+  scroll-margin-top: 600px;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 2s ease forwards;
 }
 
+/* Imagem da segunda página */ /*Arrumando a responsividade*/
+.img {
+  display: block;
+  width: 90%;
+  max-width: 670px;
+  margin: 100px auto 0 auto;
+  border-radius: 30px;
+  box-shadow: 17px 24px 6.3px 0px #00000080;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 2s ease forwards;
+}
 /*Formatação terceira pagina (fernanda)*/
 #terceira {
   background: linear-gradient(180deg, #60efff 0%, #210cae 100%);
