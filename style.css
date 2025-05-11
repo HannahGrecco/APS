@@ -18,6 +18,7 @@ p {
 a {
   font-size: 20px;
 }
+/*Barra de navegação (Hannah)*/
 .navbar {
   position: fixed;
   top: 0;
@@ -41,7 +42,7 @@ a {
 .navbar a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
+/*Primeira página/página inicial (Hannah)*/
 .container {
   display: flex-box;
   height: 100vh;
@@ -110,7 +111,7 @@ button:active {
     0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
     0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
 }
-/*FERNANDA*/
+/*Segunda página (Fernanda) */
 #segunda {
   background: white;
   background-size: cover;
@@ -169,4 +170,59 @@ button:active {
 
 h2 {
   text-align: center;
+}
+
+/*Rodapé (Kauan)*/
+footer {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+form input[type="button"] {
+  padding: 10px 20px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form input[type="button"]:hover {
+  background-color: rgb(9, 42, 231);
+}
+form input[type="button"]:active {
+  background-color: #ce0fd4;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.3);
+  transform: translateY(3px);
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 5px 0;
+}
+footer a img {
+  margin-top: 10px;
+}
+footer h1,
+footer h2,
+footer h3 {
+  color: #ffe066;
+}
+
+.mensagem-agradecimento {
+  margin-top: 10px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  display: none;
 }
