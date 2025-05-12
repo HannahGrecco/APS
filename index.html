@@ -87,12 +87,41 @@
 
     <!--FIM DA QUINTA PÁGINA-->
     <br />
-    <!--SEXTA PÁGINA - FELYPE-->
+    <!--Meia parte (Hannah)-->
+    <div class="questions">
 
-    <div class="app">
-    <h1>Quiz</h1>
-    <div class="quiz">
-      <h2 id="question">Questao</h2>
+   
+    <div id="iniciar" class="start">
+      <h2>Vamos checar se você está bem informado!</h2>
+      <button>Iniciar Quiz</button>
+    </div>
+    <!--SEXTA PÁGINA - FELYPE-->
+    
+    <div class="quiz" id="quiz1">
+      <h2>QUIZ</h2>
+      <p>Qual é o tamanho máximo de uma partícula para ser considerada um microplástico?</p>
+      <button onclick="answer('right')" class="right">5 mm</button>
+      <button onclick="answer('wrong')" class="wrong">10 mm</button>
+      <button onclick="answer('wrong')" class="wrong">2 mm</button>
+      <button onclick="answer('wrong')" class="wrong">4 m</button>
+      <button id="next">Próximo</button>
+    </div>
+   
+    <div class="qzn2" id="quiz2">
+      <h2>QUIZ</h2>
+      <p>Os microplásticos primários são fabricados intencionalmente?</p>
+      <button onclick="answer('right')" class="right">Sim</button>
+      <button onclick="answer('wrong')" class="wrong">Não</button>
+      <button onclick="answer('wrong')" class="wrong">As vezes</button>
+      <button onclick="answer('wrong')" class="wrong">Talvez</button>
+      <button id="next">Próximo</button>
+    </div>
+  </div>
+    <!--
+    <div id="quiz" class="app">
+    <h1>QUIZ</h1>
+    <div  class="quiz">
+      <h2 id="question">Qual é o tamanho máximo de uma partícula para ser considerada um microplástico?</h2>
       <div id="answer=buttons">
           <button class="btn">question1</button>
           <button class="btn">question2</button>
@@ -101,7 +130,7 @@
       </div>
       <button id="next-btn">Next</button>
     </div>
-  </div>
+  </div>-->
 
     <!--FIM DA SEXTA PÁGINA-->
     <br />
