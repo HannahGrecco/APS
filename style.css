@@ -112,7 +112,7 @@ button:active {
     0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
 }
 /*Segunda página (Fernanda) */
-#segunda {
+#oque {
   background: white;
   background-size: cover;
   margin: 100px auto;
@@ -120,9 +120,6 @@ button:active {
   padding: 20px;
   text-align: center;
   scroll-margin-top: 500px;
-  opacity: 0;
-  transform: translateX(-50px);
-  animation: fadeInLeft 2s ease forwards;
 }
 
 /* Imagem da segunda página */ /*Arrumando a responsividade*/
@@ -133,12 +130,13 @@ button:active {
   margin: 100px auto 0 auto;
   border-radius: 30px;
   box-shadow: 17px 24px 6.3px 0px #00000080;
-  opacity: 0;
-  transform: translateX(-50px);
-  animation: fadeInLeft 2s ease forwards;
+  transition: transform 0.3s ease;
+}
+.img:hover {
+  transform: scale(1.05);
 }
 /*Formatação terceira pagina (fernanda)*/
-#terceira {
+#categoria {
   background: linear-gradient(180deg, #60efff 0%, #210cae 100%);
   background-size: cover;
   height: 100vh;
@@ -162,6 +160,10 @@ button:active {
   width: 250px;
   box-shadow: 28px 42px 14.5px 0px #00000085;
   border: 1px solid #00000042;
+  transition: transform 0.3s ease;
+}
+.square:hover {
+  transform: scale(1.05);
 }
 .title {
   font-weight: bold;
@@ -171,6 +173,67 @@ button:active {
 h2 {
   text-align: center;
 }
+
+.mensagem-agradecimento {
+  margin-top: 10px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  display: none;
+}
+/*Quarta página style*/
+.page4 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5vw;
+  padding: 5vh;
+}
+
+.page4 h1 {
+  font-size: 2.5vw;
+  text-align: center;
+  width: 100%;
+}
+
+.box {
+  width: 90%;
+  max-width: 300px;
+  height: auto;
+  background-color: white;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  text-align: center;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 20px 10px 0px #00000085;
+  transition: transform 0.3s ease;
+}
+.box:hover {
+  transform: scale(1.05);
+}
+.box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.box p {
+  font-size: 2vw;
+}
+
+#title-card,
+#title-card2 {
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 10%;
+}
+
 /*Quiz (Felype)*/
 .questions {
   display: flex;
@@ -292,12 +355,4 @@ footer h1,
 footer h2,
 footer h3 {
   color: #000000;
-}
-
-.mensagem-agradecimento {
-  margin-top: 10px;
-  color: white;
-  font-size: 18px;
-  text-align: center;
-  display: none;
 }
