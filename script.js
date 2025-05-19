@@ -152,3 +152,31 @@ function showFinalMessage() {
 }
 
 showQuestion();
+
+/*Carousel*/
+const images = [
+  "assets/image 1 (1).png",
+  "assets/image 2.png",
+  "assets/image 3 (1).png",
+];
+const captions = [
+  "Reduza o uso de Plástico",
+  "Consciêntize e Eduque",
+  "Consume com consciência",
+];
+
+let index = 0;
+const imageElement = document.getElementById("image");
+const captionElement = document.getElementById("caption");
+
+document.getElementById("prev").addEventListener("click", () => {
+  index = (index - 1 + images.length) % images.length;
+  imageElement.src = images[index];
+  captionElement.textContent = captions[index]; // Atualiza a legenda
+});
+
+document.getElementById("next").addEventListener("click", () => {
+  index = (index + 1) % images.length;
+  imageElement.src = images[index];
+  captionElement.textContent = captions[index]; // Atualiza a legenda
+});
