@@ -1,37 +1,4 @@
-/*JS do Quiz botao de iniciar*/
-/*const click = document.getElementById("iniciar");
-const quiz = document.getElementById("quiz1");
-const next = document.getElementById("next");
-const quizn2 = document.getElementById("quiz2");
 
-click.addEventListener("click", function () {
-  click.style.display = "none";
-  next.style.display = "flex";
-  quiz.style.display = "flex";
-  quizn2.style.display = "none";
-});
-
-function answer(resposta) {
-  const certo = document.getElementById("right");
-  const errado1 = document.getElementById("wrong");
-  const errado2 = document.getElementById("wrong2");
-  const errado3 = document.getElementById("wrong3");
-
-  if (resposta === "right") {
-    certo.style.backgroundColor = "#4cff67";
-  } else {
-    errado1.style.backgroundColor = "#FB5B5B";
-    errado2.style.backgroundColor = "#FB5B5B";
-    errado3.style.backgroundColor = "#FB5B5B";
-    certo.style.backgroundColor = "#4cff67";
-  }
-}
-
-next.addEventListener("click", function () {
-  next.style.display = "flex";
-  quiz.style.display = "none";
-  quizn2.style.display = "flex";
-});
 
 /*JS do Rodapé*/
 function mostrarAgradecimento() {
@@ -49,6 +16,7 @@ function verificarEmail() {
     mostrarAgradecimento();
   }
 }
+/*Quiz*/ 
 const quiz = [
   {
     pergunta:
